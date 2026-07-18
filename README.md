@@ -7,8 +7,17 @@ across projects via my user profile (`~/.claude`).
 
 ```
 skills/
-  create-plan-doc/     — Save an implementation/design plan as a dated docs/plans/ file
+  create-plan-doc/       — Save an implementation/design plan as a dated docs/plans/ file
+  frontend-change-doc/   — Turn backend API changes into a frontend-facing change spec
 ```
+
+### Per-project configuration
+
+Some skills are repo-agnostic but read optional per-project config from the repo they run in,
+so project-specific paths live with the project rather than in this toolkit:
+
+- `frontend-change-doc` reads `.claude/frontend-change-doc.json` (output dir, OpenAPI spec
+  path, filename pattern, house-style docs). Without it, the skill falls back to discovery.
 
 ## Installing a skill locally
 
