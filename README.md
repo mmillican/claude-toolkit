@@ -7,6 +7,7 @@ across projects via my user profile (`~/.claude`).
 
 ```
 skills/
+  archive-completed-plans/ — Audit a project's plans folder against the code and archive shipped plans
   create-plan-doc/       — Save an implementation/design plan as a dated docs/plans/ file
   frontend-change-doc/   — Turn backend API changes into a frontend-facing change spec
 ```
