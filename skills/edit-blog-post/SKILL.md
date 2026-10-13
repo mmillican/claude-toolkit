@@ -162,30 +162,30 @@ fixed a heading level skip after 'Getting Started'"). Point to the diff for
 specifics, don't relist every fix.
 
 ## Flow & structure
-- [Location/quote]: issue. Suggestion.
+- [ ] [Location/quote]: issue. Suggestion.
 
 ## Voice & tone
-- [Location/quote]: what feels inconsistent and why.
+- [ ] [Location/quote]: what feels inconsistent and why.
 
 ## Suggested links
-- "<mention>": suggest linking to <what/where, or "needs URL from you">.
+- [ ] "<mention>": suggest linking to <what/where, or "needs URL from you">.
 
 ## Unsupported claims
-- [Location/quote]: what needs a source.
+- [ ] [Location/quote]: what needs a source.
 
 ## Readability
-- Passive voice: [Location/quote] -> suggested active phrasing.
-- Long paragraphs/sentences: [Location]: why it's worth tightening.
+- [ ] Passive voice: [Location/quote] -> suggested active phrasing.
+- [ ] Long paragraphs/sentences: [Location]: why it's worth tightening.
 
 ## Headings & scannability
-- Notes, if any.
+- [ ] Notes, if any.
 
 ## Intro & conclusion
-- Notes, if any.
+- [ ] Notes, if any.
 
 ## SEO sanity check
-- Title: note.
-- Opening (as meta description): note.
+- [ ] Title: note.
+- [ ] Opening (as meta description): note.
 ```
 
 For every "Location/quote" reference, quote enough of the original text (a
