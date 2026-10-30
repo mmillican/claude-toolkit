@@ -2,9 +2,12 @@
 
 ## What this repo is
 
-A personal toolkit of Claude Code skills. Each skill lives in `skills/<skill-key>/` and is
-linked into `~/.claude/skills/` on each machine (see [README.md](README.md)). There is no
-build, test suite, or app — the deliverables are Markdown skill files.
+A personal toolkit of agent skills in the Agent Skills format. Each skill lives in
+`skills/<skill-key>/` and is linked into the skills folder of every installed agent CLI
+(Claude Code, Copilot CLI, Codex, Gemini, Cursor) by `install.ps1`/`install.sh` (see
+[README.md](README.md)). `global/AGENTS.md` holds personal instructions linked into each
+agent's user-level instructions file. There is no build, test suite, or app — the
+deliverables are Markdown skill files.
 
 ## Repo layout
 
@@ -16,7 +19,8 @@ skills/<skill-key>/
 
 - The directory name, the frontmatter `name`, and the commit-message prefix are all the same
   skill-key (kebab-case).
-- Don't add files outside `skills/` unless they're repo-level docs (`README.md`, `CLAUDE.md`).
+- Don't add files outside `skills/` unless they're repo-level docs (`README.md`, `CLAUDE.md`),
+  the installers, or `global/AGENTS.md`.
 
 ## Authoring skills
 
@@ -38,6 +42,10 @@ Body:
 - Skills that write prose or code for the user must not silently overwrite existing files;
   produce a separate copy or report, or confirm first.
 - Don't invent facts (URLs, API shapes, file paths). Ask or leave a clear TODO.
+- Keep skills portable across agents: describe actions ("run", "ask the user", "use the
+  `create-plan-doc` skill if available") rather than naming one agent's tools, and use only
+  `name`, `description` and optional fields other agents ignore safely (`argument-hint`).
+  Shell commands should work in PowerShell and POSIX shells, or give both.
 
 ## Keeping docs in sync
 
